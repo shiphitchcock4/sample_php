@@ -8,14 +8,10 @@ php:
  # - 5.6
   
 build:
- cache: true
- cache_dir_list: 
-#    - $SHIPPABLE_BUILD_DIR/composer.json
-    - $SHIPPABLE_BUILD_DIR/tests/calculator_test.php
- ci:
-  - mkdir -p shippable/codecoverage
-  - mkdir -p shippable/testresults
-  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
+  ci:
+    - mkdir -p shippable/codecoverage
+    - mkdir -p shippable/testresults
+    - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
   
 integrations:
   notifications:
