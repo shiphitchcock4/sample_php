@@ -55,5 +55,5 @@ integrations:
      # - '#Pillar%20of%20Autumn'
         - '@shiphitchcock4'
       on_start: always
-      on_success: always
+      on_success: always 
       on_failure: always    
