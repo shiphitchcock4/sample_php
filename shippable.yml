@@ -9,8 +9,13 @@ env:
   global:
   #Testing for user defined envs and secure envs
     - TEST=FOO
+
     - secure: k+vl+nPyKBhmyFuzY981Y7LpNhQK2LBsFZqvEOISEx/posZJAOtzQMBR8arGp/jL2GxXACjBL/5ou030YrgGQWT1VlIjn+r/G9kXJpzWoA7y0BplBX8kQu7TOboUD08VGed4+V5mfofhhZBpJMBzpYSD+LAEGZ0TkvwZ3SmELLTLyVmdsVumcMryZoiUSZjeruNRTfRoG5SZIbTBON+7iRS603tYE4Z6YDZx3MlDHZT6RpEOuF5GNgo5rWq/7thDyUOEqhnUfQ9Cjfl9y1YKeNtS1w2ZFnio6Mi2w3fQ/IJvrzu5K6OC1e/mV/i2lGkNpEKN49PZcFpZcfVQl/wfCw==
+  matrix:
+    - M1=ONE
+    - secure: AomqYi1+GsY5Wy60PRYjjP0txDWURVw6UEf0t5ezB78IxaWZOSSHEYCpAfiaVP/Cxteo1ikGTPOqlzDmqS0VBsREpHjbKgoawv6mLw+mO9OKjyiB6fX9yJ9niSjxYSGjgOKvU8XyrvaoQPIw1X1UQPdAP4MQ4VnakmkXtElAAmuIKebqC6Sd2KsOAQ9iULcck4rbWlESxMrDCqrR88WiuJQg7r/V3Sb42oEAnOh7b6wnJdYNRkY/kIWFn9iamNthossepEhFGSfzjGRciLtgqtlWiz73v8stAvjr3VVvvCzDMe9cib0LWs+ClUcgGi/681H2PoYlYU3hdpGCigCLzg==
 build: 
+
  ci:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
